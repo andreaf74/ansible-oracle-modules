@@ -33,7 +33,7 @@ options:
             - This option is the database administration privileges.
         default: normal
         type: str
-        choices: ['normal', 'sysdba']
+        choices: ['normal', 'sysdba','sysoper']
     oracle_home:
         description:
             - Define the directory into which all Oracle software is installed.
@@ -179,7 +179,7 @@ def main():
     module = AnsibleModule(
         argument_spec=dict(
             hostname=dict(type='str', default='localhost'),
-            mode=dict(type='str', default='normal', choices=['normal', 'sysdba']),
+            mode=dict(type='str', default='normal', choices=['normal', 'sysdba','sysoper']),
             oracle_home=dict(type='str', required=False),
             password=dict(type='str', required=False, no_log=True),
             port=dict(type='int', default=1521),
