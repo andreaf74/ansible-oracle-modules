@@ -109,7 +109,7 @@ from distutils.version import LooseVersion
 
 #
 # try:
-#     import cx_Oracle
+#     import oracledb as cx_Oracle
 # except ImportError:
 #     cx_oracle_exists = False
 # else:

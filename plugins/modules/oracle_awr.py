@@ -10,7 +10,7 @@ from datetime import timedelta
 from ansible.module_utils.basic import AnsibleModule
 
 try:
-    import cx_Oracle
+    import oracledb as cx_Oracle
 except ImportError:
     cx_oracle_exists = False
 else:

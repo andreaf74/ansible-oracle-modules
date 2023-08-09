@@ -8,7 +8,7 @@ __metaclass__ = type
 from ansible.module_utils.basic import AnsibleModule, os, re, subprocess
 
 try:
-    import cx_Oracle
+    import oracledb as cx_Oracle
 except ImportError:
     cx_oracle_exists = False
 else:

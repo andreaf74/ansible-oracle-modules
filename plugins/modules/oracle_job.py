@@ -203,7 +203,7 @@ EXAMPLES = '''
 '''
 
 try:
-    import cx_Oracle
+    import oracledb as cx_Oracle
 except ImportError:
     cx_oracle_exists = False
 else:
